@@ -1,0 +1,177 @@
+@import url('https://fonts.googleapis.com/css2?family=Noto+Serif&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Noto Serif', serif;
+}
+.userInfo{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: blue;
+    color: #FFF;
+    width: 100vw;
+    height: auto;
+}
+#greetMsg{
+    align-self: center;
+    margin-top: 1rem;
+}
+#userData{
+    display: flex;
+    width: 100vw;
+    height: 95vh;
+
+}
+#detailShow{
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: rgb(84 56 15);
+    border-radius: 3rem;
+    margin: 1rem;
+    overflow-y: scroll;
+    overflow-x: hidden;
+}
+#userlist{
+    display: flex;
+    background-color: rgb(50, 206, 226);
+    padding: 1rem;
+    border-radius: 3rem;
+    margin: 1rem;
+    max-height: 100%;
+}
+    
+#userDetails{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin: 3rem;
+    background-color: rgb(84 56 15);
+    align-items: center;
+    width: 100%;
+    
+}
+
+#showUserList{
+    /* display: flex; */
+    width: 100%;
+    height: 100%;
+    /* border-radius: 3rem; */
+    
+    
+}
+th{
+    
+    background-color: rgb(26, 64, 187) !important;
+    padding-left: 1rem;
+}
+tr:nth-child(even){
+    background: #D3560E;
+}
+tr:nth-child(odd){
+    background: #521168;
+}
+tr:hover{
+    cursor: pointer;
+    background-color: paleturquoise;
+    color: black;
+}
+table{
+    /* border: 1px solid black; */
+
+    border-collapse: collapse;
+    border-spacing: 3rem;
+}
+
+#userDetails ul{
+    list-style-type:none;
+
+
+}
+#userDetails ul li{
+    padding: 1rem;
+
+}
+#userDetails ul li img{
+    width: 40%;
+    height: 40%;
+    border-radius: 50%;
+    margin-left: 30%;
+    background-color: #FFF;
+}
+/* button{
+    /* background-color: rgb(13, 13, 221);
+    border-radius: 1rem;
+
+}
+button:hover{
+    cursor:pointer;
+} */ 
+
+    
+
+/* Small Devices, Tablets */
+@media only screen and (max-width : 851px) {
+    #userData{
+        flex-direction: column;
+        height: 100%;
+
+    }
+    #detailShow{
+        width: 96%;
+
+    }
+    #userlist{
+        width: 96%;
+
+    }
+    #showUserList{
+        width: 100%;
+    }
+
+}
+
+/* Medium Devices, Desktops */
+@media only screen and (max-width : 651px) {
+
+#userData{
+        flex-direction: column;
+
+    }
+    #detailShow{
+        width: 96%;
+        height: 100%;
+}
+
+    #userlist{
+        width: 96%;
+        margin-left: 0;
+
+    }
+    #showUserList{
+        width: 100%;
+    }
+}
+
+/* Large Devices, Wide Screens */
+@media only screen and (min-width : 1200px) {
+
+}
+
+@media only screen and (max-width :510px) {
+    #userlist{
+        width: 100%;
+        margin: auto;
+    }
+    #showUserList{
+        display: flex;
+        width: 100%;
+        overflow-x: scroll;
+    }
+    #detailShow{
+        margin: auto;
+    }
+}
