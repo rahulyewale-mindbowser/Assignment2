@@ -9,14 +9,16 @@
     display: flex;
     flex-direction: column;
     align-items: center;
-    background-color: blue;
-    color: #FFF;
+    background-color: white;
+    /* color: #FFF; */
     width: 100vw;
     height: auto;
 }
 #greetMsg{
     align-self: center;
     margin-top: 1rem;
+    font-size: 120%;
+    color: white;
 }
 #userData{
     display: flex;
@@ -28,8 +30,8 @@
     width: 50%;
     display: flex;
     flex-direction: column;
-    align-items: center;
-    background-color: rgb(84 56 15);
+    /* align-items: center; */
+    background-color: skyblue;
     border-radius: 3rem;
     margin: 1rem;
     overflow-y: scroll;
@@ -37,79 +39,82 @@
 }
 #userlist{
     display: flex;
-    background-color: rgb(50, 206, 226);
+    background-color: bisque;
     padding: 1rem;
     border-radius: 3rem;
     margin: 1rem;
-    max-height: 100%;
-}
-    
+} 
 #userDetails{
     display: flex;
     flex-direction: column;
     justify-content: center;
     margin: 3rem;
-    background-color: rgb(84 56 15);
+    background-color: skyblue;
     align-items: center;
     width: 100%;
     
 }
 
 #showUserList{
-    /* display: flex; */
     width: 100%;
     height: 100%;
-    /* border-radius: 3rem; */
     
     
 }
 th{
     
-    background-color: rgb(26, 64, 187) !important;
+    background-color: skyblue !important;
     padding-left: 1rem;
 }
 tr:nth-child(even){
-    background: #D3560E;
+    background:  #fff2df;
+    color: black;
 }
 tr:nth-child(odd){
-    background: #521168;
+    background: #f9fbfc;
+    color: black;
 }
 tr:hover{
-    cursor: pointer;
     background-color: paleturquoise;
     color: black;
 }
 table{
-    /* border: 1px solid black; */
 
     border-collapse: collapse;
     border-spacing: 3rem;
 }
 
+
 #userDetails ul{
     list-style-type:none;
+    width: 100%;
+    
 
 
 }
 #userDetails ul li{
-    padding: 1rem;
+    padding-bottom: .5rem;
+    color: #FFF;
+    font-size: 110%;
 
 }
 #userDetails ul li img{
-    width: 40%;
-    height: 40%;
+    width: 20%;
+    height: 20%;
     border-radius: 50%;
     margin-left: 30%;
     background-color: #FFF;
 }
-/* button{
-    /* background-color: rgb(13, 13, 221);
+button{
+     background-color: rgb(154, 154, 204);
     border-radius: 1rem;
+    margin-left: .5rem;
+    color: #FFF;
 
 }
 button:hover{
     cursor:pointer;
-} */ 
+} 
 
     
 
@@ -149,17 +154,17 @@ button:hover{
     #userlist{
         width: 96%;
         margin-left: 0;
+        overflow-x: scroll;
 
+    }
+    #userDetails ul{
+        padding: 0;
     }
     #showUserList{
         width: 100%;
     }
 }
 
-/* Large Devices, Wide Screens */
-@media only screen and (min-width : 1200px) {
-
-}
 
 @media only screen and (max-width :510px) {
     #userlist{
@@ -173,5 +178,7 @@ button:hover{
     }
     #detailShow{
         margin: auto;
+        align-items: center;
+        padding-left: 1rem;
     }
 }
