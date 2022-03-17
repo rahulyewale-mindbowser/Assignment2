@@ -1,24 +1,100 @@
-@import url('https://fonts.googleapis.com/css2?family=Noto+Serif&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Noto+Serif&family=Poppins:wght@300&display=swap');
 *{
     margin: 0;
     padding: 0;
     box-sizing: border-box;
     font-family: 'Noto Serif', serif;
+    /* font-family: 'Poppins', sans-serif; */
 }
 .userInfo{
     display: flex;
     flex-direction: column;
     align-items: center;
-    background-color: white;
+    background-color: #FDFBEC;
     /* color: #FFF; */
     width: 100vw;
     height: auto;
 }
+
+
+#userlist{
+    display: flex;
+    /* background-color: bisque; */
+    padding: 1rem;
+    border-radius: 3rem;
+    margin: 1rem;
+    
+    /* overflow-y: scroll; */
+} 
+tr:first-child>:first-child {
+    
+    /* background-color: #FBDE68!important; */
+    border-top-left-radius: 1em;
+    padding-left: 1rem;
+}
+tr:first-child>:last-child{
+    border-top-right-radius: 1em;
+   
+}
+tr:first-child{
+    background-color: #022C51!important;
+    color: white;
+}
+tr:nth-child(even){
+    background:  #fff2df;
+    /* color: black; */
+}
+tr:nth-child(odd){
+    background: #f9fbfc;
+    /* color: black; */
+}
+tr:nth-child(odd) button{
+    background-color: #f9fbfc;
+    /* color: black; */
+}
+tr:hover{
+    background-color: paleturquoise;
+    /* color: black; */
+}
+tr:hover button{
+    background-color: paleturquoise;
+    /* color: black; */
+}
+table{
+
+    border-collapse: collapse;
+    /* border-spacing: 3rem; */
+    background-color: #00FFFF;
+    border-radius: 1em;
+    box-shadow: -1px -1px 2px 1px rgba(0, 0, 0, 0.2);
+    /* box-shadow: -2rem -2rem 2px 1px rgba(0, 0, 0, 0.2); */
+}
+/* tr,td, th{
+border: 1px solid black;
+    border-collapse: collapse;
+    background-color: #FDFBEC;
+} */
+td{
+    padding: .2rem;
+}
+
 #greetMsg{
     align-self: center;
-    margin-top: 1rem;
-    font-size: 120%;
-    color: white;
+    padding-top: 1rem;
+    font-size: 150%;
+    /* color: white; */
+}
+#userDetails{
+    display: flex;
+    flex-direction: column;
+    /* justify-content: center; */
+    padding-top: 2rem;
+    /* background-color: #7FFFD4; */
+    background-color: #FFF2DF;
+    align-items: center;
+    width: 100%;
+   
+    
 }
 #userData{
     display: flex;
@@ -30,72 +106,34 @@
     width: 50%;
     display: flex;
     flex-direction: column;
-    /* align-items: center; */
-    background-color: skyblue;
+    box-shadow: -1px -1px 2px 1px rgba(0, 0, 0, 0.2);
+    background-color: #FFF2DF;
     border-radius: 3rem;
     margin: 1rem;
     overflow-y: scroll;
     overflow-x: hidden;
-}
-#userlist{
-    display: flex;
-    background-color: bisque;
-    padding: 1rem;
-    border-radius: 3rem;
-    margin: 1rem;
-} 
-#userDetails{
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    margin: 3rem;
-    background-color: skyblue;
-    align-items: center;
-    width: 100%;
     
 }
 
-#showUserList{
+/* #showUserList{
     width: 100%;
     height: 100%;
     
-    
-}
-th{
-    
-    background-color: skyblue !important;
-    padding-left: 1rem;
-}
-tr:nth-child(even){
-    background:  #fff2df;
-    color: black;
-}
-tr:nth-child(odd){
-    background: #f9fbfc;
-    color: black;
-}
-tr:hover{
-    background-color: paleturquoise;
-    color: black;
-}
-table{
-
-    border-collapse: collapse;
-    border-spacing: 3rem;
-}
+     
+}*/
 
 
 #userDetails ul{
+    padding-left:2rem;
     list-style-type:none;
     width: 100%;
+    align-self: center;
     
-
-
 }
 #userDetails ul li{
     padding-bottom: .5rem;
-    color: #FFF;
-    font-size: 110%;
+    /* color: #FFF; */
+    font-size: 115%;
 
 }
 #userDetails ul li img{
@@ -106,16 +144,27 @@ table{
     background-color: #FFF;
 }
 button{
-     background-color: rgb(154, 154, 204);
-    border-radius: 1rem;
-    margin-left: .5rem;
-    color: #FFF;
+    background-color: #fff2df;
+    margin:0 .5rem;
+    border: none;
+    outline: none;
+    font-size: 100%;
+    /* color: #FFF; */
 
 }
 button:hover{
     cursor:pointer;
+    background-color: paleturquoise
 } 
-
+#details_button{
+    color: blueviolet;
+}
+#delete_button{
+    color: red;
+}
+#delete_button:hover,#details_button:hover{
+    color: black;
+}
     
 
 /* Small Devices, Tablets */

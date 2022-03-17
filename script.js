@@ -29,8 +29,8 @@ function displayData(user){
       temp += `<td>${user[i].username}</td>`;
       temp += `<td>${user[i].employment.title}</td>`;
       temp += `<td>${user[i].address.country}</td>`;
-      temp += `<td><button onclick='showDetails(${user[i].id})' >View Details</button></td>`;
-      temp += `<td><button onclick='deleteUser(${i})' >Delete Record</button></td>`;
+      temp += `<td><button id='details_button' onclick='showDetails(${user[i].id})' ><i class="fa fa-eye" aria-hidden="true"></i></button></td>`;
+      temp += `<td><button id='delete_button' onclick='deleteUser(${i})' ><i class="fa fa-trash-o"></i></button></td>`;
       temp += "</tr></a>";
     };
     document.getElementById('showUserList').innerHTML = temp;
@@ -122,6 +122,7 @@ function deleteUser(i){
     api_data.splice(i, 1);
     // console.log(api_data);
     displayData(api_data);
+    alert("Record Deleted");
     // console.log(api_data.length);
     if(i==api_data.length)
     {
@@ -131,6 +132,8 @@ function deleteUser(i){
       showDetails(api_data[i].id);
 
     }
+   
 }
+else alert("Record Not Deleted");
   // console.log(api_data[i]); 
 }
